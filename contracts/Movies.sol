@@ -21,7 +21,7 @@ contract Movies {
         MoviesArray.push(MoviesStructure(_Id, _Name, _Director, _ReleaseDate));
     }
 
-    function GetHotelBooking() public view returns (MoviesStructure[] memory) {
+    function GetMovies() public view returns (MoviesStructure[] memory) {
         return MoviesArray;
     }
 }
