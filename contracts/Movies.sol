@@ -7,7 +7,6 @@ contract Movies {
         uint256 Id;
         string Name;
         string Director;
-        uint256 ReleaseDate;
     }
 
     MoviesStructure[] MoviesArray;
@@ -15,10 +14,9 @@ contract Movies {
     function AddMovie(
         uint256 _Id,
         string memory _Name,
-        string memory _Director,
-        uint256 _ReleaseDate
+        string memory _Director
     ) public {
-        MoviesArray.push(MoviesStructure(_Id, _Name, _Director, _ReleaseDate));
+        MoviesArray.push(MoviesStructure(_Id, _Name, _Director));
     }
 
     function GetMovies() public view returns (MoviesStructure[] memory) {
