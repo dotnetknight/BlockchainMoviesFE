@@ -1,0 +1,260 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateOfPurchase",
+								"type": "uint256"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct Tickets.TicketStruct[]",
+						"name": "tickets",
+						"type": "tuple[]"
+					}
+				],
+				"name": "LogNewCustomer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dateOfPurchase",
+						"type": "uint256"
+					}
+				],
+				"name": "LogNewTicket",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "token",
+										"type": "address"
+									},
+									{
+										"internalType": "uint256",
+										"name": "dateOfPurchase",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Tickets.TicketStruct[]",
+								"name": "tickets",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Tickets.CustomerStruct",
+						"name": "customerToAdd",
+						"type": "tuple"
+					}
+				],
+				"name": "AddCustomerWithStruct",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateOfPurchase",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "AddTicket",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateOfPurchase",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Tickets.TicketStruct",
+						"name": "ticketToAdd",
+						"type": "tuple"
+					}
+				],
+				"name": "AddTicketWithStruct",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "GetCustomerTickets",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateOfPurchase",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Tickets.TicketStruct[]",
+						"name": "tickets",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GetTicketsArray",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "dateOfPurchase",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Tickets.TicketStruct[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\Tickets.sol": "Tickets"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\Tickets.sol": {
+			"keccak256": "0x62cc522740dfa1ca7c94b4a63306f1c91ce9fab00d4f883ebf9c5b81e62525d6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aba1248ba121bd77f0d01ef93b7320f9ecb421d1c61c86656a8297a793d966d5",
+				"dweb:/ipfs/QmcTMwn7EjhHQXTRcxGvWgznRAxLXQsvbYwhHqHb6GMkJM"
+			]
+		}
+	},
+	"version": 1
+}
