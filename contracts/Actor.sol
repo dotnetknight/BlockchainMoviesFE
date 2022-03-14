@@ -3,15 +3,21 @@ pragma solidity >=0.4.22 <0.9.0;
 pragma experimental ABIEncoderV2;
 
 contract Actor {
-    // ["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0", "Christian Bale", [["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0","The Dark Knight"], ["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0","The Dark Knight Rises"]]]
+    // ["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0", "Christian Bale", [["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0","The Dark Knight"], ["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0","The Dark Knight Rises"]], ["0xA27eEfe6b5180F085CE6Aa5D6DaA81d1c35153C0", "Hans  Zimmer"]]
 
     struct ActorStruct {
         string token;
         string name;
         MovieStruct[] movies;
+        ComposerStruct composer;
     }
 
     struct MovieStruct {
+        string token;
+        string name;
+    }
+
+    struct ComposerStruct {
         string token;
         string name;
     }
@@ -46,6 +52,8 @@ contract Actor {
                 MovieStruct(actorToAdd.token, actorToAdd.movies[i].name)
             );
         }
+
+        actor.composer = actorToAdd.composer;
 
         Actors.push(actor);
 

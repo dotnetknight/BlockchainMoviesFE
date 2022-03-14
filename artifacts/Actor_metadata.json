@@ -35,6 +35,23 @@
 								"internalType": "struct Actor.MovieStruct[]",
 								"name": "movies",
 								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.ComposerStruct",
+								"name": "composer",
+								"type": "tuple"
 							}
 						],
 						"internalType": "struct Actor.ActorStruct",
@@ -91,6 +108,23 @@
 								"internalType": "struct Actor.MovieStruct[]",
 								"name": "movies",
 								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.ComposerStruct",
+								"name": "composer",
+								"type": "tuple"
 							}
 						],
 						"internalType": "struct Actor.ActorStruct",
@@ -133,6 +167,23 @@
 								"internalType": "struct Actor.MovieStruct[]",
 								"name": "movies",
 								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.ComposerStruct",
+								"name": "composer",
+								"type": "tuple"
 							}
 						],
 						"internalType": "struct Actor.ActorStruct[]",
@@ -172,11 +223,11 @@
 	},
 	"sources": {
 		"contracts\\Actor.sol": {
-			"keccak256": "0x4d6dbbf892ea9dd04b1cf26926a194a98d18242ff0d55a3aec1355abcb8d352b",
+			"keccak256": "0x56e7c88fe61796bd63b5e6d2f5f89951bf288dffc44fa73a2cf81c78f6259033",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b7933b7c00a4040d3a67e7cd1463cdd1072e2d52e3e58d83d9fe67aee083a46f",
-				"dweb:/ipfs/QmVAwGG4rPMy5LLYWShLv5PxjACUm9mRA4gcuHwCkVPCv5"
+				"bzz-raw://36d4ca3679e2db7c07fa66a0ccea192550f80893a233c64dd4f71eadbfbe353a",
+				"dweb:/ipfs/Qmds4fZeSZjSP8zzT3gqTUhoCYnRyZ6u3d2WhskGc5P2UT"
 			]
 		}
 	},
