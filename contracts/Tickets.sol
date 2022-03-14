@@ -29,13 +29,25 @@ contract Tickets {
         string memory name
     ) public {
         if (TicketExists(token)) {
-            revert();
+            string memory message = append(
+                "Ticket with this token: ",
+                " already exist"
+            );
+            revert(message);
         }
         customerStructs[token].token = token;
         customerStructs[token].name = name;
         customerStructs[token].tickets.push(
             TicketStruct(token, dateOfPurchase)
         );
+    }
+
+    function append(string memory a, string memory b)
+        internal
+        pure
+        returns (string memory)
+    {
+        return string(abi.encodePacked(a, b));
     }
 
     function AddTicketWithStruct(TicketStruct memory ticketToAdd)
