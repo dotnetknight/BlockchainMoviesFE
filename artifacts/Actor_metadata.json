@@ -1,0 +1,184 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "token",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.MovieStruct[]",
+								"name": "movies",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Actor.ActorStruct",
+						"name": "actorToAdd",
+						"type": "tuple"
+					}
+				],
+				"name": "addActor",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "token",
+						"type": "string"
+					}
+				],
+				"name": "getActorByToken",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "token",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.MovieStruct[]",
+								"name": "movies",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Actor.ActorStruct",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getActors",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "token",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Actor.MovieStruct[]",
+								"name": "movies",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Actor.ActorStruct[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\Actor.sol": "Actor"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\Actor.sol": {
+			"keccak256": "0x4d6dbbf892ea9dd04b1cf26926a194a98d18242ff0d55a3aec1355abcb8d352b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7933b7c00a4040d3a67e7cd1463cdd1072e2d52e3e58d83d9fe67aee083a46f",
+				"dweb:/ipfs/QmVAwGG4rPMy5LLYWShLv5PxjACUm9mRA4gcuHwCkVPCv5"
+			]
+		}
+	},
+	"version": 1
+}
