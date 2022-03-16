@@ -1,0 +1,217 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "token",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string[]",
+										"name": "arrayElements",
+										"type": "string[]"
+									},
+									{
+										"internalType": "string",
+										"name": "field1",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "field2",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "field3",
+										"type": "string"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "token",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "comment",
+												"type": "string"
+											}
+										],
+										"internalType": "struct TestContract.Array",
+										"name": "array",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct TestContract.TestStructArgument",
+								"name": "Argument",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "isBlocked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct TestContract.TestStruct",
+						"name": "testStructToAdd",
+						"type": "tuple"
+					}
+				],
+				"name": "addTestStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTestStructLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTestStructs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "token",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "token",
+										"type": "string"
+									},
+									{
+										"internalType": "string[]",
+										"name": "arrayElements",
+										"type": "string[]"
+									},
+									{
+										"internalType": "string",
+										"name": "field1",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "field2",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "field3",
+										"type": "string"
+									},
+									{
+										"components": [
+											{
+												"internalType": "string",
+												"name": "token",
+												"type": "string"
+											},
+											{
+												"internalType": "string",
+												"name": "comment",
+												"type": "string"
+											}
+										],
+										"internalType": "struct TestContract.Array",
+										"name": "array",
+										"type": "tuple"
+									}
+								],
+								"internalType": "struct TestContract.TestStructArgument",
+								"name": "Argument",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "isBlocked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct TestContract.TestStruct[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\Test.sol": "TestContract"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\Test.sol": {
+			"keccak256": "0x874662e451d281e554130cd9e06f82eeb87b4b18939507bf62bcb0791dd621a3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://811e034c016f2abe7ae39660fb1d006a5ae8c48bc36aa27b1d1735338791abd6",
+				"dweb:/ipfs/QmRMf4ZhLmkbiBaMk5cKvpUEWaZMUHv38XEXnupgtdPP5z"
+			]
+		}
+	},
+	"version": 1
+}
