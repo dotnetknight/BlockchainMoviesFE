@@ -56,3 +56,39 @@ contract TestContract {
         return testStructs.length;
     }
 }
+
+contract HandleFloatContract {
+    struct TestStruct {
+        string token;
+        uint256 number;
+    }
+
+    TestStruct[] testStructs;
+    mapping(string => TestStruct) internal mapTestStruct;
+    uint256 constant tenTh = 10**10;
+
+    function handleFloat(TestStruct memory testStructToAdd)
+        public
+        returns (bool)
+    {
+        TestStruct storage testStruct = mapTestStruct[testStructToAdd.token];
+
+        testStruct.token = testStructToAdd.token;
+        testStruct.number = tenTh * testStructToAdd.number;
+        testStructs.push(testStruct);
+
+        return true;
+    }
+
+    function getTestStructs() public view returns (TestStruct[] memory) {
+        return testStructs;
+    }
+
+    function powNumber(uint256 number) public pure returns (uint256) {
+        return number**10;
+    }
+
+    function divideByTen(uint256 number) public pure returns (uint256) {
+        return number / tenTh;
+    }
+}
