@@ -1,4 +1,4 @@
-const TestContract = artifacts.require("TestContract");
+const TestContract = artifacts.require("Test");
 
 module.exports = function (deployer) {
     deployer.deploy(TestContract);

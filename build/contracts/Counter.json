@@ -13,7 +13,8 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "signature": "0x06661abd"
     },
     {
       "anonymous": false,
@@ -25,7 +26,8 @@
         }
       ],
       "name": "LogCount",
-      "type": "event"
+      "type": "event",
+      "signature": "0x9c8a9abacf5f9deed30e0ad87ebb3e6f102921670dd2f0c19560e9561eb62af6"
     },
     {
       "constant": false,
@@ -34,7 +36,8 @@
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function"
+      "type": "function",
+      "signature": "0xd09de08a"
     },
     {
       "constant": true,
@@ -48,7 +51,8 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "signature": "0x817cc1ea"
     },
     {
       "constant": true,
@@ -62,7 +66,8 @@
       ],
       "payable": false,
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "signature": "0xfb8f0f59"
     }
   ],
   "bytecode": "0x608060405234801561001057600080fd5b506101f1806100206000396000f3fe6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd8114610066578063817cc1ea1461008d578063d09de08a146100a2578063fb8f0f59146100b9575b600080fd5b34801561007257600080fd5b5061007b610143565b60408051918252519081900360200190f35b34801561009957600080fd5b5061007b610149565b3480156100ae57600080fd5b506100b761014f565b005b3480156100c557600080fd5b506100ce61018e565b6040805160208082528351818301528351919283929083019185019080838360005b838110156101085781810151838201526020016100f0565b50505050905090810190601f1680156101355780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60005481565b60005490565b600080546001019081905560408051918252517f9c8a9abacf5f9deed30e0ad87ebb3e6f102921670dd2f0c19560e9561eb62af69181900360200190a1565b60408051808201909152600b81527f7465737420737472696e6700000000000000000000000000000000000000000060208201529056fea165627a7a7230582017b16c1f52408de84956eaab168154504b23f7554c6cb31fce6188f8e83a68c00029",
@@ -901,9 +906,22 @@
     "name": "solc",
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1647573806741": {
+      "events": {},
+      "links": {},
+      "address": "0x4762210B236c9c0FcFa5843eec51B4EFB0d0A2aB",
+      "transactionHash": "0xc98a20a26bea350af575cc40fa56b80aa7176d9b21d13eb7a54d49c9edada4f5"
+    },
+    "1647595379804": {
+      "events": {},
+      "links": {},
+      "address": "0xCa3e739d5A8D4307711C2B8b19268F6F61A77f4b",
+      "transactionHash": "0xc4e89869b6f271cf11abbe92f192f4ef2a351ca2f3c25844a3ec031c67c5651a"
+    }
+  },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2022-03-18T04:46:19.821Z",
+  "updatedAt": "2022-03-18T09:25:33.908Z",
   "devdoc": {
     "methods": {}
   },

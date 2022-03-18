@@ -2,7 +2,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 pragma experimental ABIEncoderV2;
 
-contract TestContract {
+contract Test {
     struct TestStruct {
         string token;
         string name;
@@ -55,40 +55,21 @@ contract TestContract {
     function getTestStructLength() public view returns (uint256) {
         return testStructs.length;
     }
-}
 
-contract HandleFloatContract {
-    struct TestStruct {
-        string token;
-        uint256 number;
+    function testStructExists(string memory token) private view returns (bool) {
+        TestStruct memory testStruct = getTestStructByToken(token);
+
+        return
+            keccak256(abi.encodePacked(testStruct.token)) ==
+            keccak256(abi.encodePacked(token));
     }
 
-    TestStruct[] testStructs;
-    mapping(string => TestStruct) internal mapTestStruct;
-    uint256 constant tenTh = 10**10;
-
-    function handleFloat(TestStruct memory testStructToAdd)
+    function getTestStructByToken(string memory token)
         public
-        returns (bool)
+        view
+        returns (TestStruct memory)
     {
-        TestStruct storage testStruct = mapTestStruct[testStructToAdd.token];
-
-        testStruct.token = testStructToAdd.token;
-        testStruct.number = tenTh * testStructToAdd.number;
-        testStructs.push(testStruct);
-
-        return true;
-    }
-
-    function getTestStructs() public view returns (TestStruct[] memory) {
-        return testStructs;
-    }
-
-    function powNumber(uint256 number) public pure returns (uint256) {
-        return number**10;
-    }
-
-    function divideByTen(uint256 number) public pure returns (uint256) {
-        return number / tenTh;
+        TestStruct storage testStruct = mapTestStruct[token];
+        return testStruct;
     }
 }
