@@ -20,5 +20,7 @@ contract('MockedTest', (mockedTest) => {
         let result = await this.mockedTest.mock_testStructExists("mock token");
 
         console.log(result);
+
+        expect(result).to.be.true
     })
 })
