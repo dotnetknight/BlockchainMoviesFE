@@ -18,9 +18,6 @@ contract('MockedTest', (mockedTest) => {
 
     it('should check if test struct exists', async () => {
         let result = await this.mockedTest.mock_testStructExists("mock token");
-
-        console.log(result);
-
         expect(result).to.be.true
     })
 })
