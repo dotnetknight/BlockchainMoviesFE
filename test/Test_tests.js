@@ -1,16 +1,24 @@
 var assert = require('assert');
-// const { it } = require('mocha');
 
-const Test = artifacts.require('contracts/Test.sol');
+const MockedTest = artifacts.require('contracts/mocks/MockedTest.sol');
 
-contract('Test', (test) => {
+contract('MockedTest', (mockedTest) => {
     before(async () => {
-        this.test = await Test.deployed()
+        this.mockedTest = await MockedTest.deployed()
     })
 
-    it('should return length of test structs', async () => {
-        const lengthOfStruct = await this.test.getTestStructLength();
+    it('should return struct by token', async () => {
+        let mockToken = "mock token";
+        let result = await this.mockedTest.mock_getTestStructByToken(mockToken);
 
-        assert.equal(lengthOfStruct.toNumber(), 0);
+        assert.equal(result.name, "Mock name");
+        assert.equal(result.token, mockToken);
+        assert.equal(result.isBlocked, true);
+    })
+
+    it('should check if test struct exists', async () => {
+        let result = await this.mockedTest.mock_testStructExists("mock token");
+
+        console.log(result);
     })
 })
